@@ -1,0 +1,35 @@
+@media all and (max-width:1090px) {
+    /* Cuerpo */
+.main {
+    flex-flow: row wrap;
+}
+
+    /* Bloque Izquierdo: Encriptador */
+.bloque-izq {
+    flex: 1 100%;
+    margin-bottom: 4rem;
+    padding-left: 0;
+}
+
+.bloque-izq textarea {
+    height: 400px;
+}
+
+/* Bloque Derecho: Instrucción y Mensaje */
+.bloque-der {
+    flex: 1 100%;
+}
+    
+/* Instrucción */
+.instruccion {
+    padding: 3.5%;
+}
+
+.instruccion img {
+    display: none;
+}
+
+.textos {
+    margin-top: 0;
+}
+}

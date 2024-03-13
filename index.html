@@ -1,43 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <title>Encriptador</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--css-->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/celu.css">
+        <link rel="stylesheet" href="css/tablets.css">
+        <!--font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+        <title>Encriptador de texto Alura One 2024</title>
+
+    </head>
     <header>
-        <img class="logo" src="/imagenes/Frame 6 .png" alt="logo de alura" class="logo">
+        <h1 class="icono_alura">
+            <img src="imagenes/iconoalura.png" alt="icono de Alura">
+        </h1>
     </header>
     <main>
-        <section>
-            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-            <div>
-                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+        <form class="bloque-izq">  
+            <textarea class="input-text" cols="20" rows="3" placeholder="Ingrese el texto aquí" onkeypress="return validacion(event)" required></textarea>
+
+            <fieldset class="indicacion">
+                <img src="imagenes/icono_exclamation.png" alt="Icono de Exclamación">
+                <p class="texto-indicacion">Solo letras minúsculas y sin caracteres especiales.</p>
+            </fieldset>
+
+            <fieldset class="botones">
+                <input class="btn-encriptar" type="button" type="submit" value="Encriptar" onclick="resultadoEncriptar()">
+                <input class="btn-desencriptar" type="button" type="submit" value="Desencriptar" onclick="resultadoDesencriptar()">
+            </fieldset>                 
+        </form>
+
+        <div class="bloque-der">
+            <div class="instruccion">
+                <img src="imagenes/Muñeco.png" alt="Ilustración">
+
+                <div class="textos">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
             </div>
-            <div class="botones">
-                <button class="btn-encriptar">Encriptar</botton>
-                <button class="btn-desencriptar">Desencriptar</botton>                
-            </div>
-        </section>
-        <section>
-        <textarea class="mensaje" cols="20" rows="10"></textarea> 
-        <div>
-            <button class="copiar">Copiar</button>
+
+            <form class="mensaje">
+                <textarea class="output-text" cols="15" rows="8" readonly></textarea>
+                <input class="btn-copiar" type="button" value="Copiar" onclick="copiar()">
+            </form> 
         </div>
-        </section>
     </main>
-    <script src="index.js"></script>
-    <footer class="pie-pagina">
-        <p>© 2024 Todos los derechos reservados por Dovis Yesica | ONE G6 Projects Encriptador. </p>
+    
+        <footer class="pie-pagina">
+        <p>© 2024 Todos los derechos reservados por Dovis Yesica | ONE G6 Projecto Encriptador. </p>
         <!--Siguientes hipervinculos a paginas externas-->
-        <a href="www.linkedin.com/in/dovisyesica" target="_blank" rel="noopener noreferrer"><img src="imagenes/linkedin.png" class="pgn" alt="icono Linkedin"></a>
         <a href="https://github.com/YesDovis" target="_blank" rel="noopener noreferrer"><img src="imagenes/github.png" class="pgn" alt="icono GitHub"></a>
-</body>
+        </footer>
+        <script src="index.js"></script>
+    </body>
 
 </html>
