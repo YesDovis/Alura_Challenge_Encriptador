@@ -1,0 +1,6 @@
+background #F3F5FC
+azul boton - #0A3871
+gris boton - #D8DFE8 
+texto escla y bloques- #495057
+tipo izq - #343A40 Ningún mensaje fue encontrado
+tipo iz - #495057 Ingresa el texto que desees encriptar o desencriptar.
