@@ -32,3 +32,4 @@ https://www.figma.com/file/trP3p5nEh7XUyB3n2bomjP/Alura-Challenge---Desaf%C3%ADo
 
 ⭐ ⭐ Página de GitHub: https://yesdovis.github.io/Alura_Challenge_Encriptador/ ⭐⭐
 
+![cms_files_10224_1671210503Prancheta_3](https://github.com/YesDovis/Alura_Challenge_Encriptador/assets/128102579/7686bd10-1e50-437a-90e4-d43365d7131b)
